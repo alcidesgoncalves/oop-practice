@@ -3,12 +3,28 @@
     static void Main(string[] args)
     {
         List<Pokemon> PokemonList = new List<Pokemon>(); 
-        PokemonList.Add(new Pokemon("Bulbasaur", "Grass/Poison", new List<string> { "Tackle", "Vine-Whip", "Growth", "Razor Leaf" }));
-        PokemonList.Add(new Pokemon("Charmander", "Fire", new List<string> { "Scratch", "Growth", "Ember", "Slash" }));
-        PokemonList.Add(new Pokemon("Squirtle", "Water", new List<string> { "Tackle", "Water-Gun", "Growth", "Bite" }));
+        PokemonList.Add(new Pokemon("Bulbasaur", "Grass/Poison", new Dictionary<string, string> { 
+            {"Tackle", "Normal"}, 
+            {"Vine-Whip", "Grass"},
+            {"Growth", "Normal"},
+            { "Razor Leaf", "Grass"} 
+            }));
+        PokemonList.Add(new Pokemon("Charmander", "Fire", new Dictionary<string, string> { 
+            {"Scratch", "Normal"}, 
+            {"Growth", "Normal"}, 
+            {"Ember", "Fire" }, 
+            {"Slash", "Normal"} 
+        }));
+        PokemonList.Add(new Pokemon("Squirtle", "Water", new Dictionary<string, string> 
+        { 
+            {"Tackle", "Normal"}, 
+            {"Water-Gun", "Water"}, 
+            {"Growth", "Normal"}, 
+            {"Bubbles", "Water"} 
+        }));
         foreach (var Pokemon in PokemonList)
         {
-            Console.WriteLine($"Pokemon: {Pokemon.Name}, Type: {Pokemon.Type}, Moveset: {string.Join(", ", Pokemon.Moveset)}");
+            Console.WriteLine($"Pokemon: {Pokemon.Name}, Type: {Pokemon.Type}, Moveset: {Pokemon.GetMovesetAsString()}");
         }
         
     }
@@ -18,24 +34,23 @@ public class Pokemon
 {
     public string Name { get; set;}
     public string Type { get; set;} 
-    public List<string> Moveset { get; set;}
+    public Dictionary<string, string> Moveset { get; set;}
 
     public Pokemon()
     {
         // Inicialização padrão
         Name = "???";
         Type = "N/A";
-        Moveset = new List<string>();
+        Moveset = new Dictionary<string, string>();
     }
 
-    public Pokemon(string name, string type, List<string> moveset){
+    public Pokemon(string name, string type, Dictionary<string, string> moveset){
         Name = name;
         Type = type;
         Moveset = moveset;
     }
-
-    public override string ToString()
+     public string GetMovesetAsString()
     {
-        return $"{Name} - Type: {Type} - Moveset: {string.Join(", ", Moveset)}";
+        return string.Join(", ", Moveset.Select(move => $"{move.Key} ({move.Value})"));
     }
 }

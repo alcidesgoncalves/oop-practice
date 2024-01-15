@@ -1,0 +1,15 @@
+C:\Users\bmalc\Documents\oop-practice\oop-practice\bin\Debug\net8.0\oop-practice.exe
+C:\Users\bmalc\Documents\oop-practice\oop-practice\bin\Debug\net8.0\oop-practice.deps.json
+C:\Users\bmalc\Documents\oop-practice\oop-practice\bin\Debug\net8.0\oop-practice.runtimeconfig.json
+C:\Users\bmalc\Documents\oop-practice\oop-practice\bin\Debug\net8.0\oop-practice.dll
+C:\Users\bmalc\Documents\oop-practice\oop-practice\bin\Debug\net8.0\oop-practice.pdb
+C:\Users\bmalc\Documents\oop-practice\oop-practice\obj\Debug\net8.0\oop-practice.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\bmalc\Documents\oop-practice\oop-practice\obj\Debug\net8.0\oop-practice.AssemblyInfoInputs.cache
+C:\Users\bmalc\Documents\oop-practice\oop-practice\obj\Debug\net8.0\oop-practice.AssemblyInfo.cs
+C:\Users\bmalc\Documents\oop-practice\oop-practice\obj\Debug\net8.0\oop-practice.csproj.CoreCompileInputs.cache
+C:\Users\bmalc\Documents\oop-practice\oop-practice\obj\Debug\net8.0\oop-practice.sourcelink.json
+C:\Users\bmalc\Documents\oop-practice\oop-practice\obj\Debug\net8.0\oop-practice.dll
+C:\Users\bmalc\Documents\oop-practice\oop-practice\obj\Debug\net8.0\refint\oop-practice.dll
+C:\Users\bmalc\Documents\oop-practice\oop-practice\obj\Debug\net8.0\oop-practice.pdb
+C:\Users\bmalc\Documents\oop-practice\oop-practice\obj\Debug\net8.0\oop-practice.genruntimeconfig.cache
+C:\Users\bmalc\Documents\oop-practice\oop-practice\obj\Debug\net8.0\ref\oop-practice.dll
