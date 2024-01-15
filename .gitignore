@@ -1,6 +1,6 @@
 # Arquivos de compilação
 /bin/
-/obj/
+*.obj
 
 # Configurações específicas do ambiente
 /appsettings.json
