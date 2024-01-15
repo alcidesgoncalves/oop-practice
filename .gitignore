@@ -1,0 +1,14 @@
+# Arquivos de compilação
+/bin/
+/obj/
+
+# Configurações específicas do ambiente
+/appsettings.json
+
+# Arquivos de usuário do Visual Studio
+*.suo
+*.user
+
+# Logs
+*.log
+.vscode
